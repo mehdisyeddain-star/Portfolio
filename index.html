@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Syeddain Mehdi - Frontend Developer</title>
+    <title>Syeddain Mehdi - Digital Marketing</title>
     <style>
         * {
             margin: 0;
@@ -542,6 +542,51 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 10px;
         }
+
+        /* Print/PDF Styles - Page breaks for Acrobat */
+        @media print {
+            body {
+                background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            
+            section {
+                page-break-after: always;
+                page-break-inside: avoid;
+            }
+            
+            section:last-of-type {
+                page-break-after: auto;
+            }
+            
+            nav {
+                position: relative;
+                page-break-after: avoid;
+            }
+            
+            .experience-card {
+                page-break-inside: avoid;
+            }
+            
+            .stat-card {
+                page-break-inside: avoid;
+            }
+            
+            .skill-category {
+                page-break-inside: avoid;
+            }
+
+            .hero::before {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        @page {
+            size: letter;
+            margin: 0.5in;
+        }
     </style>
 </head>
 <body>
@@ -772,11 +817,11 @@
         <div class="container">
             <h2 class="section-title fade-in">Get In Touch</h2>
             <div class="contact-content fade-in">
-                <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about web development!</p>
+                <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about Digital Marketing!</p>
                 
                 <div class="contact-info">
                     <h3>Let's Connect</h3>
-                    <p>Ready to start my journey in frontend development and eager to contribute to your team.</p>
+                    <p>Ready to start my journey in Digital Marketing and eager to contribute to your team.</p>
                     <a href="mailto:mehdisyeddain@gmail.com" class="contact-email">
                         mehdisyeddain@gmail.com
                     </a>
